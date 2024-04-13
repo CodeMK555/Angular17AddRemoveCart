@@ -1,0 +1,11 @@
+<div class="product-container">
+    @for (product of products; track product.id)
+{
+    <div class="product">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price}}</p>
+        <button (click)="addToCart(product)">Add To addToCart </button>
+    </div>
+}
+
+</div>
